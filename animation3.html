@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Example of CSS3 Infinite Translate Animation</title>
+<style>
+  body {
+    overflow: hidden;   
+}
+    .box {
+    background-color: red;
+    margin: 100px;
+    width: 400px;
+    height: 300px;
+    position: relative;
+    left:0;
+    animation: shakeit 2s linear 0s infinite alternate;
+  }
+  @keyframes shakeit{
+   12.5%{left:50px;background-color: blue;}
+   25%{left:-25px;background-color:pink;}
+   50%{left:25px;background-color:yellow;}
+   62.5%{left:-10px;background-color: cyan;}
+   75%{left:10px;background-color: orange;}
+   37.5%{left:30px;background-color: violet;}
+  }
+</style>
+</head>
+<body>
+  <div class="box">hi</div>
+</body>
+</html>

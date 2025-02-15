@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Example of CSS3 Infinite Translate Animation</title>
+<style>
+.box {
+  background-color: red;
+  margin: 200px;
+  width: 200px; 
+  height: 200px; 
+  position: relative;
+  animation: repetit 2s linear 0s infinite alternate;
+}
+@keyframes repetit {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+</style>
+</head>
+<body>
+<div class="box">hi</div>
+</body>
+</html>
+

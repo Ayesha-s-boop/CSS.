@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Example of CSS3 Infinite Translate Animation</title>
+<style>
+  body {
+    overflow: hidden;   
+}
+    .box {
+    background-color: red;
+    margin: 100px;
+    width: 400px;
+    height: 300px;
+    position: relative;
+    animation: myfirst 2s linear 0s infinite alternate;
+  }
+  @keyframes myfirst{
+   12.5%{background-color: blue;left:0px;top:200px;}
+   25%{background-color:pink;left:20px;top:200px;}
+   50%{background-color:yellow;left:0px;top:200px;}
+   62.5%{background-color: cyan;left:200px;top:200px;}
+   75%{background-color: orange;left:200px;top:200px;}
+   37.5%{background-color: violet;left:0px;top:0px;}
+  }
+</style>
+</head>
+<body>
+  <div class="box">hi</div>
+</body>
+</html>
